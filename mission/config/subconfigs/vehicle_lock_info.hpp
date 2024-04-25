@@ -272,7 +272,6 @@ class vn_b_air_ch34_03_01 : usmc {};
 //CH34 - Heavy Transport
 class vn_i_air_ch34_01_02 : arvn {};
 class vn_i_air_ch34_02_01 : arvn {};
-class vn_i_air_ch34_02_02 : arvn {};
 //Littlebird
 class B_Heli_Light_01_F : dac_cong {};
 class vn_b_air_oh6a_01 : green_hornet {};
@@ -285,11 +284,11 @@ class vn_b_air_oh6a_07 : green_hornet {};
 //UH1B - Dustoff
 class vn_b_air_uh1b_01_01 : green_hornet {};
 //UH1B - Slick
+class vn_i_air_uh1c_07_01 : arvn {};
 class vn_b_air_uh1c_07_01 : green_hornet {};
+class vn_b_air_uh1c_07_02 : aircav {};
 class vn_b_air_uh1c_07_05 : frogmen {};
 class vn_b_air_uh1c_07_06 : anzac {};
-//UH1B - Air Cav Slick
-class vn_b_air_uh1c_07_02 : aircav {};
 //UH1D - Dustoff
 class vn_b_air_uh1d_01_01 : green_hornet {};
 class vn_b_air_uh1d_01_02 : green_hornet {};
@@ -299,6 +298,7 @@ class vn_b_air_uh1d_01_05 : green_hornet {};
 class vn_b_air_uh1d_01_06 : green_hornet {};
 class vn_b_air_uh1d_01_07 : green_hornet {};
 //UH1D - Slick
+class vn_i_air_uh1d_02_01 : arvn {};
 class vn_b_air_uh1d_02_01 : green_hornet {};
 class vn_b_air_uh1d_02_02 : aircav {};
 class vn_b_air_uh1d_02_03 : usaf {};
