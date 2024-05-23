@@ -65,6 +65,12 @@ class armor
 	lockTeam[] = {"MACV","DacCong","3rdMEU","ACAV","QuarterHorse"};
 };
 
+// WL ARMOR
+class armortf
+{
+	lockTeam[] = {"MACV","DacCong","3rdMEU","ACAV","QuarterHorse","TigerForce"};
+};
+
 // WL Boat
 class frogmen
 {
@@ -154,7 +160,7 @@ class vn_i_armor_m577_01 : arvn {};
 class vn_i_armor_m577_02 : arvn {};
 
 // M113 mortar and flamethrower
-class vn_b_armor_m125_01 : armor {};
+class vn_b_armor_m125_01 : armortf {};
 class vn_b_armor_m132_01 : armor {};
 class vn_i_armor_m125_01 : arvn {};
 class vn_i_armor_m132_01 : arvn {};
@@ -398,8 +404,8 @@ class vn_b_air_f4b_navy_sead : sa {};
 class vn_b_air_f100d_at : sa {};
 
 //Howitzer
+class vn_b_army_static_m101_01 : arvn {};
 class vn_b_army_static_m101_02 : QuarterHorse {};
-class vn_b_sf_static_m101_02 : QuarterHorse {};
 
 //Unsung
 //Jeeps + Small Cars

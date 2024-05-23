@@ -6,10 +6,6 @@ class EditorData
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
 	toggles=1610;
-	mods[]=
-	{
-		"3denEnhanced"
-	};
 	class ItemIDProvider
 	{
 		nextID=18415;
@@ -20,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=23302;
+		nextID=23406;
 	};
 	class Camera
 	{
-		pos[]={16425.795,154.32463,6214.0669};
-		dir[]={-0.1793166,-0.40875426,0.89485502};
-		up[]={-0.080312133,0.91264451,0.40078673};
-		aside[]={0.98050785,0,0.19648023};
+		pos[]={11467.295,178.08824,14397.729};
+		dir[]={0.89620161,-0.44082439,0.050742526};
+		up[]={0.44014838,0.89757532,0.024921136};
+		aside[]={0.056530166,1.8628998e-007,-0.99843806};
 	};
 };
 binarizationWanted=0;
-sourceName="bn_mikeforce_indev";
+sourceName="cln_test_v1_3";
 addons[]=
 {
 	"objects_f_vietnam_c",
@@ -384,8 +380,8 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="ReviveRequiredItems";
-			expression="false";
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
 			class Value
 			{
 				class data
@@ -435,8 +431,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="SharedObjectives";
-			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			property="ReviveRequiredItems";
+			expression="false";
 			class Value
 			{
 				class data
@@ -6633,7 +6629,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[""Land_vn_us_vehicleammo"", ""Land_vn_usaf_fueltank_75_01"", ""Land_vn_helipadsquare_f"", ""Land_vn_b_helipad_01"", ""Land_vn_helipadempty_f"", ""Land_vn_usaf_revetment_helipad_02"",""Land_vn_helipadrescue_f"", ""Land_vn_usaf_hangar_02""]";
+							value="[""Land_vn_us_vehicleammo"", ""Land_vn_usaf_fueltank_75_01"", ""Land_vn_helipadsquare_f"", ""Land_vn_b_helipad_01"", ""Land_vn_helipadempty_f"", ""Land_vn_usaf_revetment_helipad_02"",""Land_vn_helipadrescue_f"", ""Land_vn_usaf_hangar_02"",""Land_HelipadRescue_F""]";
 						};
 					};
 				};
@@ -6646,7 +6642,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[""Land_vn_us_vehicleammo"", ""Land_vn_usaf_fueltank_75_01"", ""Land_vn_helipadsquare_f"", ""Land_vn_b_helipad_01"", ""Land_vn_helipadempty_f"", ""Land_vn_usaf_revetment_helipad_02"",""Land_vn_helipadrescue_f"", ""Land_vn_usaf_hangar_02""]";
+							value="[""Land_vn_us_vehicleammo"", ""Land_vn_usaf_fueltank_75_01"", ""Land_vn_helipadsquare_f"", ""Land_vn_b_helipad_01"", ""Land_vn_helipadempty_f"", ""Land_vn_usaf_revetment_helipad_02"",""Land_vn_helipadrescue_f"", ""Land_vn_usaf_hangar_02"",""Land_HelipadRescue_F""]";
 						};
 					};
 				};
@@ -6659,7 +6655,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="[""Land_vn_us_vehicleammo"", ""Land_vn_usaf_fueltank_75_01"", ""Land_vn_helipadsquare_f"", ""Land_vn_b_helipad_01"", ""Land_vn_helipadempty_f"", ""Land_vn_usaf_revetment_helipad_02"",""Land_vn_helipadrescue_f"", ""Land_vn_usaf_hangar_02""]";
+							value="[""Land_vn_us_vehicleammo"", ""Land_vn_usaf_fueltank_75_01"", ""Land_vn_helipadsquare_f"", ""Land_vn_b_helipad_01"", ""Land_vn_helipadempty_f"", ""Land_vn_usaf_revetment_helipad_02"",""Land_vn_helipadrescue_f"", ""Land_vn_usaf_hangar_02"",""Land_HelipadRescue_F""]";
 						};
 					};
 				};
@@ -18631,7 +18627,7 @@ class Mission
 						};
 					};
 					id=18318;
-					atlOffset=-0.048920631;
+					atlOffset=-0.20605659;
 				};
 				class Item2
 				{
@@ -35740,7 +35736,7 @@ class Mission
 				};
 			};
 			id=18339;
-			atlOffset=1.6355171;
+			atlOffset=1.6355133;
 		};
 		class Item297
 		{
