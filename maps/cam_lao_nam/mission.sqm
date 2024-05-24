@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=23302;
+		nextID=23406;
 	};
 	class Camera
 	{
 		pos[]={16212.117,41.483246,6865.6382};
-		dir[]={-0.38579831,-0.28718671,-0.87679237};
-		up[]={-0.11567405,0.9578656,-0.26288989};
-		aside[]={-0.91534555,-3.4173718e-007,0.40276366};
+		dir[]={-0.38578284,-0.287175,-0.87675661};
+		up[]={-0.11565895,0.95787805,-0.26285446};
+		aside[]={-0.91531116,-7.4505806e-009,0.40274727};
 	};
 };
 binarizationWanted=0;
@@ -372,8 +372,8 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="ReviveRequiredItems";
-			expression="false";
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
 			class Value
 			{
 				class data
@@ -423,8 +423,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="SharedObjectives";
-			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			property="ReviveRequiredItems";
+			expression="false";
 			class Value
 			{
 				class data
@@ -32176,7 +32176,7 @@ class Mission
 							init="['air_anzac', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
 							id=17028;
 							type="Logic";
-							atlOffset=0.0069999695;
+							atlOffset=0.0070009232;
 						};
 						class Item14
 						{
@@ -32353,8 +32353,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={16202.48,15.710433,6822.6387};
-								angles[]={0,4.1122966,0};
+								position[]={16202.48,15.710186,6822.6392};
+								angles[]={0,4.1122923,0};
 							};
 							side="Empty";
 							flags=4;
@@ -32363,7 +32363,7 @@ class Mission
 							};
 							id=16869;
 							type="Land_Billboard_F";
-							atlOffset=-1.0127535;
+							atlOffset=-1.0130005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -32375,7 +32375,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="custom\billboards\sasr_bb.paa";
+											value="custom\billboards\ANZAC_bb.paa";
 										};
 									};
 								};
@@ -32998,7 +32998,7 @@ class Mission
 							};
 							id=18360;
 							type="vn_signad_sponsors_f";
-							atlOffset=-1.0535192;
+							atlOffset=-1.0535183;
 							class CustomAttributes
 							{
 								class Attribute0
