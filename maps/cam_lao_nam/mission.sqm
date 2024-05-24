@@ -8,7 +8,7 @@ class EditorData
 	toggles=586;
 	class ItemIDProvider
 	{
-		nextID=18358;
+		nextID=18361;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=23198;
+		nextID=23302;
 	};
 	class Camera
 	{
-		pos[]={15811.037,39.489513,7115.1548};
-		dir[]={0.10158588,-0.67303312,0.73261869};
-		up[]={0.092439078,0.73961204,0.66665536};
-		aside[]={0.9905318,4.0447048e-008,-0.13734876};
+		pos[]={16212.117,41.483246,6865.6382};
+		dir[]={-0.38579831,-0.28718671,-0.87679237};
+		up[]={-0.11567405,0.9578656,-0.26288989};
+		aside[]={-0.91534555,-3.4173718e-007,0.40276366};
 	};
 };
 binarizationWanted=0;
@@ -372,8 +372,8 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="SharedObjectives";
-			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			property="ReviveRequiredItems";
+			expression="false";
 			class Value
 			{
 				class data
@@ -423,8 +423,8 @@ class CustomAttributes
 		};
 		class Attribute4
 		{
-			property="ReviveRequiredItems";
-			expression="false";
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
 			class Value
 			{
 				class data
@@ -31844,7 +31844,7 @@ class Mission
 					name="ANZAC";
 					class Entities
 					{
-						items=37;
+						items=40;
 						class Item0
 						{
 							dataType="Marker";
@@ -32173,10 +32173,10 @@ class Mission
 								position[]={16211.023,14.987,6804.5591};
 								angles[]={0,5.8883047,0};
 							};
-							init="['air_transport_all', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
+							init="['air_anzac', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
 							id=17028;
 							type="Logic";
-							atlOffset=0.0070009232;
+							atlOffset=0.0069999695;
 						};
 						class Item14
 						{
@@ -32953,9 +32953,73 @@ class Mission
 								nAttributes=1;
 							};
 						};
+						class Item37
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={16169.966,14.930195,6815.291};
+								angles[]={0,3.9092596,0};
+							};
+							init="['anzac', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
+							id=18358;
+							type="Logic";
+							atlOffset=-0.051308632;
+						};
+						class Item38
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={16173.359,15.124328,6813.1489};
+								angles[]={0,5.6709161,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+							};
+							id=18359;
+							type="Sign_Arrow_Direction_Green_F";
+							atlOffset=0.086238861;
+						};
+						class Item39
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={16172.809,15.081097,6808.3521};
+								angles[]={0,2.5883508,0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=18360;
+							type="vn_signad_sponsors_f";
+							atlOffset=-1.0535192;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
 					};
 					id=18331;
-					atlOffset=0.07154274;
+					atlOffset=-0.49590874;
 				};
 				class Item14
 				{
@@ -35258,7 +35322,7 @@ class Mission
 				};
 			};
 			id=18339;
-			atlOffset=1.7581558;
+			atlOffset=1.7226906;
 		};
 		class Item298
 		{
@@ -40201,11 +40265,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=363;
+			nextID=365;
 		};
 		class Links
 		{
-			items=363;
+			items=365;
 			class Item0
 			{
 				linkID=0;
@@ -43831,6 +43895,26 @@ class Mission
 				linkID=362;
 				item0=16529;
 				item1=18293;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item363
+			{
+				linkID=363;
+				item0=18359;
+				item1=18358;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item364
+			{
+				linkID=364;
+				item0=18360;
+				item1=18358;
 				class CustomData
 				{
 					type="Sync";

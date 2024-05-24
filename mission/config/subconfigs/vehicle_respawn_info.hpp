@@ -241,6 +241,19 @@ class vehicles {
 	class vn_i_armor_m577_02 {
 		tags[] = {"m577","medical","apc","arvn"};
 	};	
+	class vn_b_armor_m113_01_aus_army {
+		tags[] = {"m113","armed","transport","apc","aus"};
+	};
+	class vn_b_armor_m125_01_aus_army {
+		tags[] = {"m113","armed","transport","apc","aus"};
+	};
+	class vn_b_armor_m577_01_aus_army {
+		tags[] = {"m113","armed","transport","apc","aus"};
+	};
+	class vn_b_armor_m577_02_aus_army {
+		tags[] = {"m113","armed","transport","apc","aus"};
+	};
+
 
 	//Armor
 	class vn_b_armor_m41_01_01 {
@@ -1165,6 +1178,12 @@ class spawn_point_types {
 				icon = VEHICLE_ICON_CAR;
 				include[] = { { "dirtranger", "armed" } };
 				exclude[] = { {"transport" } };
+			};
+			class ausapc {
+				name = "Armored Personnel Carrier";
+				icon = VEHICLE_ICON_CAR;
+				include[] = { { "m113","armed","transport","apc","aus" } };
+				exclude[] = { { "pavn" } };
 			};
 		};
 	};

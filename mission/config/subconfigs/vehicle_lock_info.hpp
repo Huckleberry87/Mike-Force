@@ -152,6 +152,10 @@ class vn_i_armor_m113_acav_03 : arvn {};
 class vn_i_armor_m113_acav_04 : arvn {};
 class vn_i_armor_m113_acav_05 : arvn {};
 class vn_i_armor_m113_acav_06 : arvn {};
+class vn_b_armor_m113_01_aus_army : anzac {};
+class vn_b_armor_m125_01_aus_army : anzac {};
+class vn_b_armor_m577_01_aus_army : anzac {};
+class vn_b_armor_m577_02_aus_army : anzac {};
 
 // M113 command and ambulance variants
 class vn_b_armor_m577_01 : acav {};

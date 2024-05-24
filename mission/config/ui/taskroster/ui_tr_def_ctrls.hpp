@@ -323,10 +323,10 @@ class vn_tr_selectTeam_base : vn_mf_RscControlsGroupNoScrollbarHV
 			w = UIW(3);
 			h = UIH(3);
 			
-			tooltip = "NZ-SAS";
+			tooltip = "BN-ANZAC";
 			
-			text = "custom\taskroster\NZSAS_grey.paa";
-			textUp = "custom\taskroster\NZSAS_HL.paa";
+			text = "custom\taskroster\BN_ANZAC_patch.paa";
+			textUp = "custom\taskroster\BN_ANZAC_patch_gray.paa";
 			
 			onButtonClick = "['SASR'] call vn_mf_fnc_tr_selectTeam;";
 		};
